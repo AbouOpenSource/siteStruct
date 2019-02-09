@@ -4,6 +4,8 @@ let express= require('express')
 
 let app =express()
 
+		let Formation = require('./models/formation')
+
 let bodyParser= require('body-parser')
 	
 let formation = require('./models/formation')
@@ -16,12 +18,25 @@ app.use('/assets',express.static('public'))
 
 app.get('/test',(request,response)=>{
 
-//console.log("Salut")
-formation('test','encore','encore','enfin')
+		let item = new Formation("test","test","test","salut")
 
 
-}
-)
+		Formation.create(item);
+		response.render('pages/index')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 app.get('/',(request, response)=>{
 	response.render('pages/index',{index : 'active'})

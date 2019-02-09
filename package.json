@@ -21,11 +21,13 @@
     "@firebase/app-types": "^0.3.3",
     "@firebase/storage": "^0.2.7",
     "@firebase/util": "^0.2.6",
+    "@google-cloud/storage": "^2.4.2",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "firebase-admin": "^7.0.0",
-    "install": "^0.12.2"
+    "install": "^0.12.2",
+    "multer": "^1.4.1"
   },
   "devDependencies": {
     "firebase": "^5.8.2"
