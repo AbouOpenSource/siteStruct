@@ -23,6 +23,7 @@
     "@firebase/util": "^0.2.6",
     "@google-cloud/storage": "^2.4.2",
     "body-parser": "^1.18.3",
+    "collections": "^5.1.8",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "firebase-admin": "^7.0.0",

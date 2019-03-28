@@ -1,4 +1,7 @@
+
 <% include header%>
+
+
 
 <!-- Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -35,6 +38,7 @@
     </div>
 </div>
 <!-- Modal -->
+
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
@@ -70,7 +74,7 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Upcoming Events</a></li>
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Research</a></li>
           <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
         </ul>
         <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
@@ -80,42 +84,54 @@
 </section>
 <!-- /page title -->
 
-<!-- courses -->
+<!-- research -->
 <section class="section">
   <div class="container">
     <div class="row">
       
-
-
-      <!-- event -->
-      
-
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card border-0 rounded-0 hover-shadow">
-          <div class="card-img position-relative">
-            <img class="card-img-top rounded-0" src="<%= %>" alt="event thumb">
-            <div class="card-date"><span>18</span><br>December</div>
-          </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-1.jpg" alt="research thumb">
           <div class="card-body">
-            <!-- location -->
-            <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-            <a href="event-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
-            </a>
+            <h4 class="card-title">Agriculture</h4>
+            <p class="card-text">
+              Les objets connectés sont de plus en plus presents en Agriculture où ils amenent facilité et rentabilité.
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-2.jpg" alt="research thumb">
+          <div class="card-body">
+            <h4 class="card-title">Santé</h4>
+            <p class="card-text">
+             Les objets connectés sont de plus en plus presents dans le domaine de la santé où ils amenent précision et performance.   
+            </p>
           </div>
         </div>
       </div>
       
 
-
-
-
-    </div>
+      <!-- recharch item -->
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card rounded-0 hover-shadow border-top-0 border-left-0 border-right-0">
+          <img class="card-img-top rounded-0" src="images/research/research-3.jpg" alt="research thumb">
+          <div class="card-body">
+            <h4 class="card-title">Dans le monde des Big Data</h4>
+            <p class="card-text">
+            Les objets connectés sont partout et recoltent des informations sur tout et rien. Ces informations permettent de proposer ulterieusement des solutions adaptées au réalités voir anticiper des problèmes. 
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
   </div>
 </section>
+<!-- /research -->
 
-
-
-<!-- /courses -->
 
 <% include footer%>

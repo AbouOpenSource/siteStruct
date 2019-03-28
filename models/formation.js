@@ -18,9 +18,10 @@ class Formation{
                             firebase.initializeApp(config);
                           }
                       catch (err) {
-                            if (!/already exists/.test(err.message)) {
+                            if (!/already exists/.test(err.message)) 
+                            {
                             console.error('Firebase initialization error raised', err.stack)
-                                                                      }
+                            }
                                   }
                       const firebaseApp= firebase;
 
@@ -33,6 +34,63 @@ class Formation{
 
                       return firebaseApp.database().ref().update(updates);
                     }
+
+
+
+
+
+
+
+
+
+    static all()
+    {
+                  let config = require('../config/firebase');
+                      let firebase = require('firebase');
+  
+                  try {
+                        firebase.initializeApp(config);
+                        }
+                  catch (err) {
+                      if (!/already exists/.test(err.message)) 
+                        {
+                          console.error('Firebase initialization error raised', err.stack)
+                        }
+                              }
+                 const firebaseApp= firebase;
+                // var test= firebaseApp.database().ref('formations')
+                 var data= firebaseApp.database().ref('formations')
+
+                    data.once("value", function(snapshot) {
+                      var value = snapshot.val();   //Data is in JSON format.
+                          console.log(value);
+                      });
+                  return data;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

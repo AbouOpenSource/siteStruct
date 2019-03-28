@@ -1,5 +1,8 @@
 <% include header%>
 
+
+
+
 <!-- Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -70,8 +73,8 @@
     <div class="row">
       <div class="col-md-8">
         <ul class="list-inline custom-breadcrumb">
-          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="@@page-link">Upcoming Events</a></li>
-          <li class="list-inline-item text-white h3 font-secondary @@nasted"></li>
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="notice.html">Notice</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">Notice Details</li>
         </ul>
         <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
       </div>
@@ -80,42 +83,38 @@
 </section>
 <!-- /page title -->
 
-<!-- courses -->
+<!-- notice details -->
 <section class="section">
   <div class="container">
     <div class="row">
-      
-
-
-      <!-- event -->
-      
-
-      <div class="col-lg-4 col-sm-6 mb-5">
-        <div class="card border-0 rounded-0 hover-shadow">
-          <div class="card-img position-relative">
-            <img class="card-img-top rounded-0" src="<%= %>" alt="event thumb">
-            <div class="card-date"><span>18</span><br>December</div>
+      <div class="col-12">
+        <div class="d-flex">
+          <div class="text-center mr-4">
+            <div class="p-4 bg-primary text-white">
+                <span class="h2 d-block">30</span> APR,2019
+            </div>
           </div>
-          <div class="card-body">
-            <!-- location -->
-            <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-            <a href="event-single.html">
-              <h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4>
-            </a>
+          <!-- notice content -->
+          <div>
+            <h3 class="mb-4">Teaching Materials and Testing Methods</h3>
+            <p>Lorem ipsum dolor sit amet, lectus molestie amet eget varius nulla ultricies, senectus vehicula wisi risus tellus nonummy. Urna volutpat, nunc doloremque risus felis lorem risus. Et suspendisse diam libero pulvinar, tristique ac cras luctus ornare. Quam justo. Non ligula turpis sem, velit dolor luctus venenatis. Eros eget at vitae, wisi diam ut ad convallis, in gravida nunc inceptos sed leo donec, duis dolorem adipiscing arcu facilisis. Purus lorem vulputate et condimentum in felis, porttitor accumsan id bibendum diam varius, lorem diam molestie erat a amet urna, dolor pellentesque lectus justo adipiscing. Laoreet est velit vestibulum, laoreet luctus bibendum sed ornare amet elementum, ullamcorper nibh in sollicitudin donec arcu lorem.</p>
+            <p>Quam justo. Non ligula turpis sem, velit dolor luctus venenatis. Eros eget at vitae, wisi diam ut ad convallis, in gravida nunc inceptos sed leo donec, duis dolorem adipiscing arcu facilisis. Purus lorem vulputate et condimentum in felis, porttitor accumsan id bibendum diam varius, lorem diam molestie erat a amet urna, dolor pellentesque lectus justo adipiscing. Laoreet est velit vestibulum, laoreet luctus bibendum sed ornare amet elementum, ullamcorper nibh in sollicitudin donec arcu lorem.</p>
+            <ul class="list-styled mb-5">
+              <li>Digital Access to Scholarship at Smart</li>
+              <li>institutes</li>
+              <li>Smart-affiliated hospitals and research</li>
+              <li>Smart Catalyst</li>
+              <li>Smart Library Portal</li>
+              <li>Smart research programs and departments</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Download</a>
           </div>
         </div>
       </div>
-      
-
-
-
-
     </div>
   </div>
 </section>
+<!-- /notice details -->
 
-
-
-<!-- /courses -->
 
 <% include footer%>
